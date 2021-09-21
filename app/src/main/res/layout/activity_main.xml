@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumadora"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 1"
+        android:inputType="numberDecimal|numberSigned"
+        />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 2"
+        android:inputType="numberDecimal|numberSigned"
+        />
+
+    <Button
+        android:id="@+id/btnCalcula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Sumar"
+        android:text="Calcular"
+        />
+
+</LinearLayout>
